@@ -1,91 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-
-* {
-
-    font-family: 'Poppins',
-        sans-serif;
-    padding: 0;
-    margin: 0;
-
+:root {
+    /* members */
+    --s01: #17A7FE;
+    --s02: #8801FF;
+    --s03: #FFFC02;/* black txt */
+    --s04: #98C649;
+    --s05: #D10A70;
+    --s06: #FC83A5;
+    --s07: #6599A4;
+    --s08: #FFE3E2;/* black txt */
+    --s09: #FFC936;/* black txt */
+    --s10: #FBA0E3;
+    --s11: #FEE002;
+    --s12: #5974FF;
+    --s13: #FF953F;
+    --s14: #1222B5;
+    --s15: #D51312;
+    --s16: #FE8E76;
+    --s17: #AB63B4;
+    --s18: #B7F54C;/* black txt */
+    --s19: #52D8BB;
+    --s20: #FF428A;
+    --s21: #C7A4DC;
+    --s22: #7BBA8D;
+    --s23: #CFF3FF;/* black txt */
+    --s24: #FFAB62;
+    /* albums */
+    --acidangelfromasia: #ED0B57;
+    --assemble: #000000;
+    --krystaleyes: #F9ACA4;
+    --lovelution: #008DFF;
+    --evolution: #C43E33;
+    --aria: #C9A3C8;
+    --nxt: #383838;
+    --glow: #F2A9C9;
+    --visionaryvision: #E16947;
+    --hachi: #D7606E;
 }
 
-body {
+@font-face {
+    font-family: 'Pretendard';
+    src: url(/fonts/Pretendard-Regular.otf) format('truetype') font-weight-normal,
+        url(/fonts/Pretendard-Bold.otf) format('truetype') font-weight-bold,
+        url(/fonts/Pretendard-Bold-Italic.otf) format('truetype') font-italic font-weight-bold;
+}
 
-    height: 100vh;
-    display: flex;
+#name-btn {
+    display: inline-flex;
+    padding: 10px 20px;
     justify-content: center;
     align-items: center;
-
-}
-
-.card {
-    position: relative;
-    width: 400px;
-    height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25)); 
-    background-repeat:
-        no-repeat;
-    background-size: cover;
-    margin: 20px;
-    background-position: center;
-}
-
-.card::after {
-
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.408) 62.83%, rgba(0, 0, 0, 0.8) 99.99%);
-    background-blend-mode: darken,
-        normal;
-
-}
-
-.card>.content {
-
+    gap: 10px;
+    border-radius: 74px;
     color: white;
-    position: absolute;
-    top: 435px;
-    left: 4.77%;
-    right: 4.77%;
-    z-index: 2;
-    transition: top 450ms ease-out;
-
+    font-size: 24px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-.card>.content>h1 {
-    font-size: 2.5rem;
-}
-
-.card>.content>p {
-    margin-bottom: .7rem;
-}
-
-.card:hover>.content {
-    top: 300px;
-}
-
-.btn {
-    border: none;
-    padding: .7em 1.8em;
+#member-card { 
+    display: flex;
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
     border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: .8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
-.btn-card {
-    background: #D0EEB0;
-    transition: background 200ms ease;
+.member-name {
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 20px;
+    color: white;
+    font-family: 'Pretendard', sans-serif;
+    z-index: 1;
+    text-align: left;
+    align-self: flex-end;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.btn-card:hover {
-    background: #bfed8e;
+a {
+    text-decoration: none;
+    color: inherit;
 }
