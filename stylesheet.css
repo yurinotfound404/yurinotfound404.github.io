@@ -2,13 +2,10 @@
     /* members */
     --s01: #17A7FE;
     --s02: #8801FF;
-    --s03: #FFFC02;/* black txt */
     --s04: #98C649;
     --s05: #D10A70;
     --s06: #FC83A5;
     --s07: #6599A4;
-    --s08: #FFE3E2;/* black txt */
-    --s09: #FFC936;/* black txt */
     --s10: #FBA0E3;
     --s11: #FEE002;
     --s12: #5974FF;
@@ -17,13 +14,19 @@
     --s15: #D51312;
     --s16: #FE8E76;
     --s17: #AB63B4;
-    --s18: #B7F54C;/* black txt */
     --s19: #52D8BB;
     --s20: #FF428A;
     --s21: #C7A4DC;
     --s22: #7BBA8D;
-    --s23: #CFF3FF;/* black txt */
     --s24: #FFAB62;
+
+    /* black txt */
+    --s23: #CFF3FF;
+    --s18: #B7F54C;
+    --s08: #FFE3E2;
+    --s09: #FFC936;
+    --s03: #FFFC02;
+
     /* albums */
     --acidangelfromasia: #ED0B57;
     --assemble: #000000;
@@ -40,8 +43,10 @@
 @font-face {
     font-family: 'Pretendard';
     src: url(/fonts/Pretendard-Regular.otf) format('truetype') font-weight-normal,
-        url(/fonts/Pretendard-Bold.otf) format('truetype') font-weight-bold,
-        url(/fonts/Pretendard-Bold-Italic.otf) format('truetype') font-italic font-weight-bold;
+        url(/fonts/Pretendard-Black.otf) format('truetype') font-weight-black,
+        url(/fonts/Pretendard-ExtraBold.otf) format('truetype') font-weight-extrabold,
+        url(/fonts/Pretendard-ExtraLight.otf) format('truetype') font-weight-extralight,
+        url(/fonts/Pretendard-Bold.otf) format('truetype') font-weight-bold;
 }
 
 #name-btn {
@@ -58,7 +63,7 @@
     word-wrap: break-word
 }
 
-#member-card { 
+#member-card {
     display: flex;
     width: 300px;
     height: 400px;
