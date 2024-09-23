@@ -62,7 +62,7 @@
     gap: 10px;
     border-radius: 100px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Pretendard', sans-serif;
     font-weight: bold;
     word-wrap: break-word
@@ -96,6 +96,8 @@
 a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: bold;
 }
 
 header {
@@ -113,20 +115,15 @@ header {
 
 header.sticky {
     padding: 20px 100px;
-    background: #fff;
+    background: white;
 }
 
-header .logo {
+header .logo,
+header .menu-icon {
     position: relative;
     font-weight: bold;
     transition: 0.6s;
     height: 30px;
-}
-
-.menu-icon {
-    height: 30px; /* Adjust the size as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-left: 20px; /* Space between the logo and the menu icon */
 }
 
 .banner {
@@ -155,27 +152,4 @@ header .logo {
 
 .slide.active {
     opacity: 1; /* Show the active slide */
-}
-
-
-.dots {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: white;
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: 0.5; /* Semi-transparent */
-}
-
-.dot.active {
-    opacity: 1; /* Fully opaque for the active dot */
 }
