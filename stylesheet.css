@@ -2,16 +2,13 @@
     /* members */
     --s01: #17A7FE;
     --s02: #8801FF;
-    --s03: #FFFC02;
-    /* black txt */
+    --s03: #FFFC02;/* black txt */
     --s04: #98C649;
     --s05: #D10A70;
     --s06: #FC83A5;
     --s07: #6599A4;
-    --s08: #FFE3E2;
-    /* black txt */
-    --s09: #FFC936;
-    /* black txt */
+    --s08: #FFE3E2;/* black txt */
+    --s09: #FFC936;/* black txt */
     --s10: #FBA0E3;
     --s11: #FEE002;
     --s12: #5974FF;
@@ -20,14 +17,12 @@
     --s15: #D51312;
     --s16: #FE8E76;
     --s17: #AB63B4;
-    --s18: #B7F54C;
-    /* black txt */
+    --s18: #B7F54C;/* black txt */
     --s19: #52D8BB;
     --s20: #FF428A;
     --s21: #C7A4DC;
     --s22: #7BBA8D;
-    --s23: #CFF3FF;
-    /* black txt */
+    --s23: #CFF3FF;/* black txt */
     --s24: #FFAB62;
     /* albums */
     --acidangelfromasia: #ED0B57;
@@ -63,18 +58,29 @@
     word-wrap: break-word
 }
 
-#member-card {
+#member-card { 
     display: flex;
-    width: 278px;
-    height: 371px;
-    padding: 310px 95px 20px 20px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    width: 300px;
+    height: 400px;
     flex-shrink: 0;
     border-radius: 5px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.80) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.member-name {
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 20px;
+    color: white;
+    font-family: 'Pretendard', sans-serif;
+    z-index: 1;
+    text-align: left;
+    align-self: flex-end;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a {
